@@ -8,6 +8,7 @@
 A minimal telegram bot for managing your daily-life tasks
 ```
 
+---
 ### Commands
 - `/add <title> [description]`
 - `/list`
@@ -17,6 +18,7 @@ A minimal telegram bot for managing your daily-life tasks
 - `/clear`
 - `/help`
 
+---
 ### TO-DO's
 - [ ] Inline Buttons
 - [ ] DB integration
