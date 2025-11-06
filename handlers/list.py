@@ -13,7 +13,7 @@ async def list_handler(update: Update, context: CallbackContext) -> None:
     todoes_items = todos.list_todos(user_id)
 
     if not todoes_items:
-        await update.message.reply_text("you have no todo items.")
+        await update.message.reply_text("you have no task items.")
         return
 
     message_lines = []

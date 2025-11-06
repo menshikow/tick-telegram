@@ -42,14 +42,14 @@ def mark_done(user_id, index):
         todos[index]["done"] = True
         save(data)
     else:
-        raise IndexError("Todo item not found.")
+        raise IndexError("task not found.")
 
 
 def add_description(user_id, index, description):
     data = load()
     todos = data.get(str(user_id), [])
     if not (0 <= index < len(todos)):
-        raise ValueError("Todo item with the given index not found.")
+        raise ValueError("task with the given index not found.")
     todos[index]["description"] = description
     save(data)
 
@@ -61,7 +61,7 @@ def delete_todo(user_id, index):
         todos.pop(index)
         save(data)
     else:
-        raise IndexError("todo item not found.")
+        raise IndexError("task not found.")
 
 
 def clear_all(user_id):
