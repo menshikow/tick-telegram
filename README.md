@@ -17,6 +17,9 @@ A minimal telegram bot for managing your daily-life tasks
 - `/clear`
 - `/help`
 
+### TO-DO's
+- [ ] Inline Buttons
+- [ ] DB integration
 
 @ticktodo_bot
 ---
