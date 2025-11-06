@@ -24,11 +24,11 @@ def main():
         MessageHandler(filters.TEXT & ~filters.COMMAND, fallback.unknown_handler)
     )
 
-    logger.info("🤖 Bot is running...")
+    logger.info("bot is running...")
     try:
         app.run_polling(allowed_updates=[])
     except Exception as e:
-        logger.error(f"Bot crashed: {e}", exc_info=True)
+        logger.error(f"bot crashed: {e}", exc_info=True)
 
 
 if __name__ == "__main__":
