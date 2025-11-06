@@ -8,7 +8,7 @@ __pycache__/
 *.tmp
 *.bak
 *.swp
-*.python-version
+.python-version
 
 # ─── Environments ─────────────────────────────────────────
 .venv/
