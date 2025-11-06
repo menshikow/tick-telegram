@@ -14,8 +14,6 @@ __pycache__/
 .venv/
 env/
 venv/
-.uv/
-uv.lock
 
 # ─── Local Data ───────────────────────────────────────────
 data/
