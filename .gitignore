@@ -1,0 +1,44 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ─── Environments ─────────────────────────────────────────
+.venv/
+env/
+venv/
+.uv/
+uv.lock
+
+# ─── Local Data ───────────────────────────────────────────
+data/
+storage/data.json
+*.json
+
+# ─── Config ─────────────────────────────────────
+.env
+*.env
+*.env.*
+config/config_local.py
+
+# ─── OS / IDE files ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# ─── Deployment / Cache ───────────────────────────────────
+*.egg-info/
+dist/
+build/
+__build__/
+.cache/
+.coverage
+htmlcov/
