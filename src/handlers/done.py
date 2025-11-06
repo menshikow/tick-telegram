@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from storage import todos
+from src.storage import todos
 
 
 async def done_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

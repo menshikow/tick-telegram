@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from handlers.help import HELP_TEXT
+from src.handlers.help import HELP_TEXT
 
 
 async def unknown_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
