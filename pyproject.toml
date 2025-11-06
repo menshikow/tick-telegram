@@ -12,5 +12,4 @@ dependencies = [
 ]
 
 [tool.uv]
-# ensures uv creates/uses .venv in project directory
 managed = true
