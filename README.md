@@ -28,4 +28,4 @@ A minimal telegram bot for managing your daily-life tasks
 
 @ticktodo_bot
 ---
-© 2025 — All rights reserved.
+© 2025 

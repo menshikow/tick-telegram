@@ -1,5 +1,12 @@
 import logging
-from telegram.ext import Application, CommandHandler, MessageHandler, filters
+from telegram.ext import (
+    Application,
+    CommandHandler,
+    MessageHandler,
+    filters,
+    CallbackQueryHandler,
+)
+from src.handlers.buttons import todos as todo_buttons, menu as menu_buttons
 from src.handlers import add, adddesc, done, list, start, delete, help, clear, fallback
 from src.config import config
 
@@ -18,6 +25,13 @@ def main():
     app.add_handler(CommandHandler("adddesc", adddesc.add_description_handler))
     app.add_handler(CommandHandler("delete", delete.delete_handler))
     app.add_handler(CommandHandler("clear", clear.clear_handler))
+    # handle done:/delete: callbacks
+    app.add_handler(
+        CallbackQueryHandler(todo_buttons.button_handler, pattern="^(done|delete):")
+    )
+
+    # handle menu: callbacks
+    app.add_handler(CallbackQueryHandler(menu_buttons.menu_handler, pattern="^menu:"))
 
     # fallback handler for any unrecognized text
     app.add_handler(
