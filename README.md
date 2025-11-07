@@ -24,6 +24,7 @@ A minimal telegram bot for managing your daily-life tasks
 - [ ] DB integration
 - [ ] Logging & error monitoring
 - [ ] Dockerize
+- [ ] Localization 
 
 @ticktodo_bot
 ---
