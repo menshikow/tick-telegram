@@ -8,7 +8,7 @@ async def add_handler(
     context: ContextTypes.DEFAULT_TYPE,
 ) -> None:
     if not context.args:
-        await update.message.reply_text("please provide a title for the todo item.")
+        await update.message.reply_text("please provide a title for the task.")
         return
 
     title = context.args[0]
@@ -17,7 +17,7 @@ async def add_handler(
 
     todos.add(user_id, title, description)
     await update.message.reply_text(
-        f'todo item "{title}" added.'
+        f'task "{title}" added.'
         if description == ""
-        else f'todo item "{title}" with description "{description}" added.'
+        else f'task "{title}" with description "{description}" added.'
     )

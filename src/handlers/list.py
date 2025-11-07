@@ -10,14 +10,14 @@ async def list_handler(update: Update, context: CallbackContext) -> None:
         await update.message.reply_text("could not identify user.")
         return
 
-    todoes_items = todos.list_todos(user_id)
+    task_items = todos.list_tasks(user_id)
 
-    if not todoes_items:
+    if not task_items:
         await update.message.reply_text("you have no task items.")
         return
 
     message_lines = []
-    for index, item in enumerate(todoes_items):
+    for index, item in enumerate(task_items):
         status = "✓" if item["done"] else " "
         message_lines.append(f"{index + 1}. {item['title']} {status}")
 

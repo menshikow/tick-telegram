@@ -6,7 +6,7 @@ from src.storage import todos
 async def done_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if not context.args:
         await update.message.reply_text(
-            "please provide the index of the todo item to mark as done."
+            "please provide the index of the task to mark as done."
         )
         return
 
@@ -24,8 +24,8 @@ async def done_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
     try:
         todos.mark_done(user_id, index)
-        await update.message.reply_text(f"marked todo item #{index + 1} as done.")
+        await update.message.reply_text(f"marked task #{index + 1} as done.")
     except IndexError:
         await update.message.reply_text(
-            "todo item not found. please check the index and try again."
+            "task not found. please check the index and try again."
         )
