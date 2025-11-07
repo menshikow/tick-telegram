@@ -20,7 +20,7 @@ A minimal telegram bot for managing your daily-life tasks
 
 ---
 ### TO-DO's
-- [ ] Inline Buttons
+- [x] Inline Buttons
 - [ ] DB integration
 - [ ] Logging & error monitoring
 - [ ] Dockerize
