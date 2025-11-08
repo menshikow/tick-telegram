@@ -1,15 +1,25 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
+from tick_telegram_bot.localization import t
 
-def build_main_menu():
+
+def build_main_menu(lang: str = "en"):
     keyboard = [
         [
-            InlineKeyboardButton("📝 Add Task", callback_data="menu:add"),
-            InlineKeyboardButton("📋 List Tasks", callback_data="menu:list"),
+            InlineKeyboardButton(
+                t("menu.buttons.add", lang=lang), callback_data="menu:add"
+            ),
+            InlineKeyboardButton(
+                t("menu.buttons.list", lang=lang), callback_data="menu:list"
+            ),
         ],
         [
-            InlineKeyboardButton("🧹 Clear All", callback_data="menu:clear"),
-            InlineKeyboardButton("❓ Help", callback_data="menu:help"),
+            InlineKeyboardButton(
+                t("menu.buttons.clear", lang=lang), callback_data="menu:clear"
+            ),
+            InlineKeyboardButton(
+                t("menu.buttons.help", lang=lang), callback_data="menu:help"
+            ),
         ],
     ]
     return InlineKeyboardMarkup(keyboard)

@@ -1,0 +1,11 @@
+services:
+  bot:
+    build: .
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN}
+    volumes:
+      - tick-data:/app/src/tick_telegram_bot/data
+    restart: unless-stopped
+
+volumes:
+  tick-data:

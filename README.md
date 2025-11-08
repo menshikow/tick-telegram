@@ -18,14 +18,18 @@ A minimal telegram bot for managing your daily-life tasks
 - `/clear`
 - `/help`
 
+### Localization
+- English (default)
+- Russian — automatically selected when Telegram is set to Russian
+
 ---
 ### TO-DO's
 - [x] Inline Buttons
 - [ ] DB integration
 - [ ] Logging & error monitoring
-- [ ] Dockerize
-- [ ] Localization 
+- [x] Dockerize
+- [x] Localization 
 
 @ticktodo_bot
 ---
-© 2025 
+© 2025
