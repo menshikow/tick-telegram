@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from src.storage import todos
-from src.handlers.help import HELP_TEXT
+from tick_telegram_bot.storage import todos
+from tick_telegram_bot.handlers.help import HELP_TEXT
 
 
 async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -13,7 +13,7 @@ async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if action == "add":
         await query.edit_message_text("Use /add <title> to add a new task.")
     elif action == "list":
-        from src.handlers.list import list_handler
+        from tick_telegram_bot.handlers.list import list_handler
 
         await list_handler(update, context)
     elif action == "clear":

@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from src.storage import todos
+from tick_telegram_bot.storage import todos
 
 
 async def add_handler(

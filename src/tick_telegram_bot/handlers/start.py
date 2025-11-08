@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from src.handlers.buttons.menu_keyboard import build_main_menu
+from tick_telegram_bot.handlers.buttons.menu_keyboard import build_main_menu
 
 
 async def start_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
