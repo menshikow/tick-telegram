@@ -38,7 +38,7 @@ def main():
         MessageHandler(filters.TEXT & ~filters.COMMAND, fallback.unknown_handler)
     )
 
-    logger.info("bot is running...")
+    logger.info("bot in starting...")
     try:
         app.run_polling(allowed_updates=[])
     except Exception as e:
