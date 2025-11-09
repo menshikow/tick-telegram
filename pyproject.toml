@@ -4,21 +4,14 @@ version = "0.1.0"
 description = "A simple Telegram todo bot using local JSON storage"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "python-dotenv>=1.0.1",
-    "python-telegram-bot>=22.5",
-]
+dependencies = ["python-dotenv>=1.0.1", "python-telegram-bot>=22.5"]
 
 [build-system]
 requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["tick_telegram_bot"]
-package-dir = "src"
-
-[tool.hatch.build.targets.sdist]
-include = ["src/tick_telegram_bot"]
+packages = ["src/tick_telegram"]
 
 [tool.uv]
 managed = true
