@@ -9,7 +9,9 @@ A minimal telegram bot for managing your daily-life tasks
 ```
 
 ---
-### Commands
+
+## Commands
+
 - `/add <title> [description]`
 - `/list`
 - `/done <index>`
@@ -18,18 +20,22 @@ A minimal telegram bot for managing your daily-life tasks
 - `/clear`
 - `/help`
 
-### Localization
+## Localization
+
 - English (default)
 - Russian — automatically selected when Telegram is set to Russian
 
 ---
-### TO-DO's
+
+## TO-DO's
+
 - [x] Inline Buttons
 - [ ] DB integration
 - [ ] Logging & error monitoring
 - [x] Dockerize
-- [x] Localization 
+- [x] Localization
 
 @ticktodo_bot
+
 ---
 © 2025
