@@ -29,7 +29,7 @@ A minimal telegram bot for managing your daily-life tasks
 
 ## TO-DO's
 
-- [ ] fix dependecny issues
+- [x] fix dependecny issues
 - [ ] add logging throughtout
 - [ ] standardize error handling
 - [ ] improve list hanlder ux
