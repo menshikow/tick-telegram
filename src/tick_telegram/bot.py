@@ -28,7 +28,9 @@ logger = logging.getLogger(__name__)
 
 
 def main():
-    app = Application.builder().token(config.BOT_TOKEN).build()
+    app = (
+        Application.builder().token(config.BOT_TOKEN).build()
+    )  # pyright: ignore[reportArgumentType]
 
     app.add_handler(CommandHandler("start", start.start_handler))
     app.add_handler(CommandHandler("help", help.help_handler))
