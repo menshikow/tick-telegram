@@ -29,11 +29,14 @@ A minimal telegram bot for managing your daily-life tasks
 
 ## TO-DO's
 
-- [x] Inline Buttons
-- [ ] DB integration
-- [ ] Logging & error monitoring
-- [x] Dockerize
-- [x] Localization
+- [ ] fix dependecny issues
+- [ ] add logging throughtout
+- [ ] standardize error handling
+- [ ] improve list hanlder ux
+- [ ] add input validation
+- [ ] add docker support
+- [ ] expand test coverage
+- [ ] add ci/cd
 
 @ticktodo_bot
 

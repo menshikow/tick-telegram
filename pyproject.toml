@@ -5,8 +5,6 @@ description = "A simple Telegram todo bot using local JSON storage"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dotenv>=0.9.9",
-    "logger>=1.4",
     "python-dotenv>=1.0.1",
     "python-telegram-bot>=22.5",
 ]
