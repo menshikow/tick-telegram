@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from tick_telegram_bot.storage import todos
+from tick_telegram.storage import todos
 
 
 @pytest.fixture(autouse=True)
@@ -75,7 +75,9 @@ def test_clear_all_resets_only_selected_user(temp_todo_file):
     todos.clear_all(1)
 
     assert todos.list_tasks(1) == []
-    assert todos.list_tasks(2) == [{"title": "user2 task", "description": "", "done": False}]
+    assert todos.list_tasks(2) == [
+        {"title": "user2 task", "description": "", "done": False}
+    ]
 
 
 def test_corrupt_file_is_reset(temp_todo_file):

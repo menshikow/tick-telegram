@@ -1,8 +1,8 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from tick_telegram_bot.handlers.help import get_help_text
-from tick_telegram_bot.localization import get_user_language, t
-from tick_telegram_bot.storage import todos
+from tick_telegram.handlers.help import get_help_text
+from tick_telegram.localization import get_user_language, t
+from tick_telegram.storage import todos
 
 
 async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -15,7 +15,7 @@ async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if action == "add":
         await query.edit_message_text(t("menu.add_prompt", lang=lang))
     elif action == "list":
-        from tick_telegram_bot.handlers.list import list_handler
+        from tick_telegram.handlers.list import list_handler
 
         await list_handler(update, context)
     elif action == "clear":

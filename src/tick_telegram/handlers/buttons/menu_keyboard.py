@@ -1,6 +1,6 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from tick_telegram_bot.localization import t
+from tick_telegram.localization import t
 
 
 def build_main_menu(lang: str = "en"):

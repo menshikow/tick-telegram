@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from tick_telegram_bot.localization import get_user_language, t
-from tick_telegram_bot.storage import todos
+from tick_telegram.localization import get_user_language, t
+from tick_telegram.storage import todos
 
 
 async def done_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -13,9 +13,7 @@ async def done_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     try:
         index = int(context.args[0]) - 1  # Convert to zero-based index
     except ValueError:
-        await update.message.reply_text(
-            t("errors.index_number_required", lang=lang)
-        )
+        await update.message.reply_text(t("errors.index_number_required", lang=lang))
         return
 
     try:
@@ -28,6 +26,4 @@ async def done_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         todos.mark_done(user_id, index)
         await update.message.reply_text(t("done.success", lang=lang, index=index + 1))
     except IndexError:
-        await update.message.reply_text(
-            t("errors.task_not_found_retry", lang=lang)
-        )
+        await update.message.reply_text(t("errors.task_not_found_retry", lang=lang))

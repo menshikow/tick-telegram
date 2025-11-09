@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from tick_telegram_bot.localization import get_user_language, t
-from tick_telegram_bot.storage import todos
+from tick_telegram.localization import get_user_language, t
+from tick_telegram.storage import todos
 
 
 async def delete_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

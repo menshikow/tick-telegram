@@ -1,8 +1,8 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext
 
-from tick_telegram_bot.localization import get_user_language, t
-from tick_telegram_bot.storage import todos
+from tick_telegram.localization import get_user_language, t
+from tick_telegram.storage import todos
 
 
 async def list_handler(update: Update, context: CallbackContext) -> None:

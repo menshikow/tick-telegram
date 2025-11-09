@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ContextTypes
 
-from tick_telegram_bot.localization import get_user_language, t
+from tick_telegram.localization import get_user_language, t
 
 
 def get_help_text(lang: str) -> str:

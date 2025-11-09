@@ -1,8 +1,0 @@
-.git
-.github
-__pycache__/
-*.pyc
-.env
-.venv
-tests/
-Dockerfile

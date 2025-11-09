@@ -6,11 +6,11 @@ from telegram.ext import (
     filters,
     CallbackQueryHandler,
 )
-from tick_telegram_bot.handlers.buttons import (
+from tick_telegram.handlers.buttons import (
     todos as todo_buttons,
     menu as menu_buttons,
 )
-from tick_telegram_bot.handlers import (
+from tick_telegram.handlers import (
     add,
     adddesc,
     done,
@@ -21,7 +21,7 @@ from tick_telegram_bot.handlers import (
     clear,
     fallback,
 )
-from tick_telegram_bot.config import config
+from tick_telegram.config import config
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
