@@ -15,11 +15,11 @@ TRANSLATIONS: Mapping[str, Mapping[str, str]] = {
     },
     "add.success_no_desc": {
         "en": 'task "{title}" added.',
-        "ru": 'таска "{title}" добавлена.',
+        "ru": 'задача "{title}" добавлена.',
     },
     "add.success_with_desc": {
         "en": 'task "{title}" with description "{description}" added.',
-        "ru": 'таска "{title}" с описанием "{description}" добавлена.',
+        "ru": 'задача "{title}" с описанием "{description}" добавлена.',
     },
     "adddesc.usage": {
         "en": "usage: /adddesc <index> <description>",
@@ -31,11 +31,11 @@ TRANSLATIONS: Mapping[str, Mapping[str, str]] = {
     },
     "adddesc.success": {
         "en": 'added description "{description}" to task number {index}.',
-        "ru": 'описание "{description}" добавлено к таске №{index}.',
+        "ru": 'описание "{description}" добавлено к задаче №{index}.',
     },
     "adddesc.invalid_index": {
         "en": "invalid task number.",
-        "ru": "неверный номер таски.",
+        "ru": "неверный номер задачи.",
     },
     "errors.user_unknown": {
         "en": "could not identify user.",
@@ -51,31 +51,31 @@ TRANSLATIONS: Mapping[str, Mapping[str, str]] = {
     },
     "errors.task_not_found_retry": {
         "en": "task not found. please check the index and try again.",
-        "ru": "таска не найдена. проверьте номер и попробуйте снова.",
+        "ru": "задача не найдена. проверьте номер и попробуйте снова.",
     },
     "list.empty": {
         "en": "you have no task items.",
-        "ru": "у вас нет тасок.",
+        "ru": "у вас нет задач.",
     },
     "done.missing_index": {
         "en": "please provide the index of the task to mark as done.",
-        "ru": "укажите номер таски, чтобы отметить её выполненной.",
+        "ru": "укажите номер задачи, чтобы отметить её выполненной.",
     },
     "done.success": {
         "en": "marked task #{index} as done.",
-        "ru": "таска №{index} отмечена выполненной.",
+        "ru": "задача №{index} отмечена выполненной.",
     },
     "delete.usage": {
         "en": "usage: /delete <todo_index>",
-        "ru": "использование: /delete <номер_таски>",
+        "ru": "использование: /delete <номер_задачи>",
     },
     "delete.success": {
         "en": "deleted task #{index}.",
-        "ru": "таска №{index} удалена.",
+        "ru": "задача №{index} удалена.",
     },
     "clear.cleared": {
         "en": "all your tasks have been cleared.",
-        "ru": "все ваши таски удалены.",
+        "ru": "все ваши задачи удалены.",
     },
     "fallback.unknown_command": {
         "en": "I didn’t recognize that command.\n\n",
@@ -123,7 +123,7 @@ TRANSLATIONS: Mapping[str, Mapping[str, str]] = {
     },
     "menu.cleared": {
         "en": "🧹 All tasks cleared!",
-        "ru": "🧹 Все таски очищены!",
+        "ru": "🧹 Все задачи очищены!",
     },
     "menu.buttons.add": {
         "en": "📝 Add Task",
@@ -131,7 +131,7 @@ TRANSLATIONS: Mapping[str, Mapping[str, str]] = {
     },
     "menu.buttons.list": {
         "en": "📋 List Tasks",
-        "ru": "📋 Список Тасок",
+        "ru": "📋 Список Задач",
     },
     "menu.buttons.clear": {
         "en": "🧹 Clear All",
