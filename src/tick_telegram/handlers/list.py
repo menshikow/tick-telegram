@@ -8,12 +8,12 @@ from tick_telegram.storage import todos
 async def list_handler(update: Update, context: CallbackContext) -> None:
     lang = get_user_language(update)
     try:
-        user_id = update.effective_user.id
+        user_id = update.effective_user.id  # type: ignore
     except AttributeError:
         if update.callback_query:
             await update.callback_query.answer(t("errors.user_unknown", lang=lang))
         else:
-            await update.message.reply_text(t("errors.user_unknown", lang=lang))
+            await update.message.reply_text(t("errors.user_unknown", lang=lang))  # type: ignore
         return
 
     task_items = todos.list_tasks(user_id)
@@ -44,6 +44,6 @@ async def list_handler(update: Update, context: CallbackContext) -> None:
         if update.message:
             await update.message.reply_text(text, reply_markup=reply_markup)
         elif update.callback_query:
-            await update.callback_query.message.reply_text(
+            await update.callback_query.message.reply_text(  # type: ignore
                 text, reply_markup=reply_markup
             )

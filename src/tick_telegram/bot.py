@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 def main():
     app = (
-        Application.builder().token(config.BOT_TOKEN).build()
+        Application.builder().token(config.BOT_TOKEN).build()  # type: ignore
     )  # pyright: ignore[reportArgumentType]
 
     app.add_handler(CommandHandler("start", start.start_handler))
